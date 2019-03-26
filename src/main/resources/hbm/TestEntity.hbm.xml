@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.entity.TestEntity"
+           table="test_entity_table">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="email" type="java.lang.String">
+            <column name="email">
+                <comment>email</comment>
+            </column>
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="userName">
+                <comment>userName</comment>
+            </column>
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="userId">
+                <comment>userId</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

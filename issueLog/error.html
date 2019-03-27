@@ -3,3 +3,10 @@ The APR based Apache Tomcat Native library which allows optimal performance in p
 sulotion
 put file:tcnative-1.dll into C:\WINDOWS\system32
 http://archive.apache.org/dist/tomcat/tomcat-connectors/native/
+
+issue
+解决java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone
+sulotion
+在spring.datasource.url=jdbc:mysql://localhost:3306/elm_uat?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+加入
+&serverTimezone=GMT%2B8

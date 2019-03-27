@@ -17,10 +17,10 @@ public class HibernateTestConnection {
 
     public static void main(String[] args) {
         HibernateTestConnection conn = new HibernateTestConnection();
-      //  conn.testConn();
+        //  conn.testConn();
         //conn.saveByHibernate();
 //        conn.getDataById();
- //       conn.getResultSetBySQL();
+        //       conn.getResultSetBySQL();
         conn.getResultSetByHQL();
     }
 

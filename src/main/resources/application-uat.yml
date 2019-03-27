@@ -8,10 +8,10 @@ server:
 #数据库配置
 spring:
   datasource:
-    url : jdbc:sqlserver://localhost:1433;DatabaseName=ACE_UAT
-    username : sa
-    password : P@ssw0rd
-    driverClassName : com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=ACE_UAT
+    username: sa
+    password: P@ssw0rd
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
 
   devtools:

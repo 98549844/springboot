@@ -18,7 +18,7 @@ public class TestService {
     private testDao testDao;
 
     public boolean saveTestEntity(TestEntity testEntity) {
-        log.info("SERVICE***" + this.getClass().getName()+"."+Thread.currentThread() .getStackTrace()[1].getMethodName());
+        log.info("SERVICE***" + this.getClass().getName() + "." + Thread.currentThread().getStackTrace()[1].getMethodName());
 
         try {
             testDao.savetestEntity(testEntity);

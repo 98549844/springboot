@@ -18,7 +18,7 @@ public class HelloController extends CommonController {
 
     @RequestMapping("/hello")
     public String index() {
-        log.info("CONTROLLER***" + this.getClass().getName()+"."+Thread.currentThread() .getStackTrace()[1].getMethodName());
+        log.info("CONTROLLER***" + this.getClass().getName() + "." + Thread.currentThread().getStackTrace()[1].getMethodName());
 
         TestEntity test = new TestEntity();
         test.setUserId(100);
@@ -28,8 +28,6 @@ public class HelloController extends CommonController {
         testService.saveTestEntity(test);
         return "hello spring boot!!!";
     }
-
-
 
 
     /**
@@ -44,7 +42,6 @@ public class HelloController extends CommonController {
         ModelAndView mv = super.page("blank.jsp");
         return mv;
     }
-
 
 
 }

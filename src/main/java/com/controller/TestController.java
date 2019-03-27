@@ -21,14 +21,13 @@ public class TestController {
     @RequestMapping("/test")
     public String index() {
 
-        log.info("CONTROLLER***" + this.getClass().getName()+"."+Thread.currentThread() .getStackTrace()[1].getMethodName());
+        log.info("CONTROLLER***" + this.getClass().getName() + "." + Thread.currentThread().getStackTrace()[1].getMethodName());
 
         TestEntity test = testService.getTestEntityById(1);
         System.out.println("print result***" + test.getUserName());
 
         return "hello spring boot!!!";
     }
-
 
 
 }

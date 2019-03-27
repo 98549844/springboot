@@ -1,16 +1,19 @@
 package com.entity;
 
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import javax.persistence.*;
 import javax.persistence.Column;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Table;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import java.io.Serializable;
 
 
+@EntityListeners(AuditingEntityListener.class)
 @Table(name = "test_entity_table")
 @Entity
-public class TestEntity {
+public class TestEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
